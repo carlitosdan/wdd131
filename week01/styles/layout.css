@@ -1,0 +1,129 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --header-bg: #ffffff;
+    --menu-hover: #2980b9;
+
+    --section-bg-1: #ecf0f1;  /* Light Gray */
+    --section-bg-2: #dff9fb;  /* Light Blue */
+
+    --light-bg : #f5f5f5;
+    --dark-bg: #222;
+
+
+}
+
+body {
+    font-family: 'Open Sans', Arial;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+
+/* Full-width header background */
+header {
+    width: 100%;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Centers the header container */
+    padding: 10px 0;
+    min-height: 80px;
+}
+
+/* Centered, boxed layout */
+.header-container {
+    width: 1140px;
+    display: flex;
+    justify-content: space-between; /* Logo left, menu right */
+    align-items: center; /* Center vertically */
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Align menu items horizontally */
+    gap: 20px;
+
+}
+
+/* Menu Items */
+nav ul li {
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: var(--menu-hover);
+    color: #fff;
+    border-radius: 5px;
+} 
+
+
+
+
+/* Banner */
+.banner {
+    width: 100%;
+    min-height: 400px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.section-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; /* Adds vertical spacing */
+}
+
+/* Boxed container for content */
+.section {
+    width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px;
+    align-items: center;
+}
+
+/* Background variations */
+.section-wrapper.bg-light {
+    background-color: var(--light-bg);
+}
+
+.section-wrapper.bg-dark {
+    background-color: var(--dark-bg);
+    color: #fff;
+}
+
+.section.single-column {
+    grid-template-columns: 1fr; /* Full width inside the box */
+    text-align: center;
+}
