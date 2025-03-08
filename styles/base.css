@@ -40,6 +40,10 @@ body {
     color: var(--primary-color);
 }
 
+.header-title h1{
+    font-size: 24px; 
+}
+
 .header-menu-wrapper {
     width: 100%;
     display: flex;
