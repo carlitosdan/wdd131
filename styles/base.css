@@ -84,14 +84,18 @@ nav ul li a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
-    padding: 20px 0; /* Adds vertical spacing */
+    padding: 20px 0; 
 }
 
-/* Boxed container for content */
+
+main {
+    max-width:100%;
+}
+
 .section_grid {
     width: 1140px;
     display: grid;
-    grid-template-columns: 2fr 1fr; /* Two equal columns */
+    grid-template-columns: 2fr 1fr; 
     gap: 20px;
     align-items: start;
 }
@@ -152,7 +156,7 @@ nav ul li a:hover {
 }
 
 .section.single-column {
-    grid-template-columns: 1fr; /* Full width inside the box */
+    grid-template-columns: 1fr;
     text-align: center;
 }
 
