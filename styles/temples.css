@@ -1,6 +1,6 @@
 @media (min-width: 600px) {
 
-.title {
+.title h1{
         font-size: 24px;
         font-weight: bold;
         color: var(--text-color);
@@ -90,12 +90,13 @@ nav ul li a:hover {
     padding-top: 35px;
 }
 
-.title {
+.title h1{  
     font-size: 22px;
     font-weight: bold;
     color: var(--text-color);
     padding-left: 20px;
     padding-top: 0px;
+
 }
 
 .navigation a {
@@ -123,6 +124,8 @@ nav ul li a:hover {
 .open a {
 	display: block;
     }
+
+   
 
 }
 
