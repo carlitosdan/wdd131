@@ -1,0 +1,96 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --background-color: #f5f5f5;
+    --text-color: #333;
+    --header-bg: #ffffff;
+    --menu-hover: #2980b9;
+    --section-bg-1: #ecf0f1;  /* Light Gray */
+    --section-bg-2: #dff9fb;  /* Light Blue */
+    --light-bg : #f5f5f5;
+    --dark-bg: #222;
+}
+
+
+body {
+    font-family: 'Open Sans', Arial;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+/* Full-width header background */
+header {
+    width: 100%;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; /* Centers the header container */
+    padding: 10px 0;
+    min-height: 80px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    padding-top: 40px;
+    flex-direction: column;
+
+}
+
+.album {
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);  Default: 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+}
+
+
+
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    width: 100%;
+    background-color: var(--dark-bg);
+    color:var(--background-color);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Grid-based container */
+.footer-container {
+    width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+}
+
+/* Footer sections */
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
