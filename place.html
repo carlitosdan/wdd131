@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Daniel Florian</title>
+    <meta name="description" content="Temple Album - Daniel Florian">
+    <meta name="author" content="Carlos Daniel Florian">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script> 
+    
+</head>
+<body>
+
+ <header>
+        <div class="header-container">
+            <div class="title"><h1>Chachapoyas, Peru</h1></div>
+        </div>
+</header>
+    
+<section class="hero">
+    <img 
+        class="hero-img"
+        src="images/hero-s.webp"
+        srcset="images/hero-s.webp 600w, images/hero-m.webp 1024w, images/hero-large.webp 1920w" 
+       
+        alt="Chachapoyas Peru">
+    
+
+    <div class="floating-image image-left">
+        <h3>Data</h3>
+        <p><strong>Area:</strong> 12.3 km²<br>
+            <strong>Population:</strong> 32,026<br>
+            <strong>Capital:</strong> Chachapoyas<br>
+            <strong>Language:</strong> Spanish<br>
+            <strong>Currency:</strong> PEN and US $<br>
+            <strong>Time zone:</strong> 	UTC-5 <br>
+            <strong>Calling code:</strong> 41 <br>
+
+        </p>
+    </div>
+
+    <div class="floating-image image-right">
+        <h3>Weather </h3>
+        
+        <div class="mobile_icon"></div>
+       
+        <p>
+            <strong>Temperature Average:</strong> 30°<br>
+            <strong>Wind:</strong> NE 7 km/h<br>
+            <strong>Probability of Precipitation:</strong> 75%<br>
+            <strong>Probability of Thunderstorms:</strong> 18%<br>
+            <strong>Cloud Cover:</strong> 	81%<br>
+
+
+        </p>
+        <div id="result"></div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <p>© <span id="year"></span> - Daniel Florian - Lima, Peru</p>
+            <p>The last modified: <span id="lastModified"></span></p>
+        </div>
+       
+    </div>
+</footer>
+
+    
+    
+</body>
+</html>
