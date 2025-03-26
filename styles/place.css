@@ -174,13 +174,15 @@
 .mobile_icon{
     width: 35px;
     height:35px;
-    
     mask: url('/images/icon_weather.svg');
     -webkit-mask: url('/images/icon_weather.svg') center / contain;
     background-image: linear-gradient(rgb(255, 196, 0), rgb(180, 228, 250) );
     mask-repeat: no-repeat;
     margin:0 auto;
 
+}
+.mobile_icon img{
+    display:none;
 }
 
 .desktop_icon{
