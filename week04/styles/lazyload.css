@@ -1,0 +1,164 @@
+@media (min-width: 600px) {
+
+    .title{
+        width:100%;
+       text-align: center;
+    
+    }
+
+    .title h1{
+            font-size: 26px;
+            font-weight: bold;
+            color: var(--color-white);
+            
+        }
+        
+    .header-container {
+        width: 800px;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center; /* Center vertically */
+    }
+    
+   
+
+
+
+.floating-image {
+        position: absolute;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 15px;
+        border-radius: 2px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        text-align: center;
+
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: center; 
+
+       
+    }
+
+.floating-image p{
+        font-size: 14px;
+        letter-spacing: 0.5px;
+        line-height: 1.8;
+
+    }
+
+.floating-image h3{
+       background-color: var(--color--light-green-cyan);
+       box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+       padding:10px 35px; 
+       
+    }
+    
+    
+.image-left {
+        top: 10%;
+        left: 5%;
+    }
+    
+.image-right {
+        bottom: 10%;
+        right: 5%;
+    }
+    
+    
+    .mobile_icon{
+        display:none;   
+    }
+    
+    .desktop_icon{
+    padding-left: 10px;
+    float:right;
+    }
+    .image-right h3::after{
+        content: "";
+        background-image:url('../images/icon_weather_L.png');
+        display:inline-block;
+        width:25px;
+        height: 25px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+     }
+    
+ }
+    
+    
+    
+    @media (max-width: 600px) {
+    
+    .header-container {
+            width:100%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: flex-start; 
+    }
+        
+    
+    
+    .title h1{  
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--text-color);
+        padding-left: 20px;
+        padding-top: 0px;
+    
+    }
+
+
+
+
+    
+    
+    
+.floating-image {
+          width:100%;
+            padding: 15px;
+           
+            text-align: center;
+    
+          
+            align-items: center; 
+            justify-content: center; 
+    
+           
+        }
+    
+.floating-image p{
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            line-height: 1.8;
+    
+        }
+    
+.floating-image h3{
+          font-size: 28px;
+           
+        }
+.mobile_icon{
+    width: 35px;
+    height:35px;
+    mask: url('/images/icon_weather.svg');
+    -webkit-mask: url('/images/icon_weather.svg') center / contain;
+    background-image: linear-gradient(rgb(255, 196, 0), rgb(180, 228, 250) );
+    mask-repeat: no-repeat;
+    margin:0 auto;
+
+}
+.mobile_icon img{
+    display:none;
+}
+
+.desktop_icon{
+    display:none;   
+}
+
+.image-left{
+    border-bottom: 1px solid #e5e7e9;
+}
+    
+}

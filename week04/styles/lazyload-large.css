@@ -1,0 +1,97 @@
+:root {
+    --color--black: #000000;
+    --color--cyan-bluish-gray: #abb8c3;
+    --color--white: #ffffff;
+    --color--pale-pink: #f78da7;
+    --color--vivid-red: #cf2e2e;
+    --color--luminous-vivid-orange: #ff6900;
+    --color--luminous-vivid-amber: #fab700;
+    --color--light-green-cyan: #7bdcb5;
+    --color--vivid-green-cyan: #00d084;
+    --color--pale-cyan-blue: #8ed1fc;
+    --color--vivid-cyan-blue: #0693e3;
+    --color--vivid-purple: #9b51e0;
+}
+
+body {
+    font-family: 'Open Sans', Arial;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-white);
+    color: var(--color--black);
+
+}
+
+
+header {
+    width: 100%;
+    background-color: var(--color--black);
+    border-bottom:20px solid #fab701; 
+    display: flex;
+    justify-content: center; 
+
+    min-height: 60px;
+    color:var(--color--white);
+}
+
+header .header-container{
+    border:0px solid #00d084;
+    display: flex;
+    justify-content: center; 
+
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Makes items stack vertically */
+    justify-content: center; /* Aligns items in the center */
+    align-items: center; /* Centers items horizontally */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4;
+
+}
+
+main img{
+    width: 400px;
+    height: 600px;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    margin: 10px 0; /* Adds space between items */
+    border-radius: 3px; 
+}
+
+
+
+/* Footer sections */
+
+.footer {
+    width: 100%;
+    background-color: var(--color--black);
+    color:var(--color--white);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    
+    height: 100%;  
+}
+
+.footer-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+}
+
+
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
