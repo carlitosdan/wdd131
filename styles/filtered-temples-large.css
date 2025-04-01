@@ -94,6 +94,10 @@ figure{
     padding-left: 15px;
     padding-right: 15px;
 }
+.filter button{
+    padding: 5px 15px;
+    cursor: pointer; 
+}
 
 
 
