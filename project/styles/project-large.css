@@ -1,0 +1,195 @@
+:root {
+    --primary-color-blue: #63b4e5;
+    --primary-color_red: #c25c5c;
+    --primary-color_yellow: #f7db5e;
+    --text-color: #343334;
+    --white-bg: #ffffff;
+    --dark-bg: #b8b8b8;
+
+}
+
+
+body {
+    font-family: 'Open Sans', Arial;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+}
+
+/* Full-width header background */
+header {
+    width: 100%;
+    background-color: var(--header-bg);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center; /* Centers the header container */
+    padding: 10px 0;
+    min-height: 80px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    flex-direction: column;
+
+}
+
+main .section1{
+    max-width: 800px; 
+    /*background-color: var(--section-bg-1);*/
+    
+
+
+}
+
+main .imglogo{
+
+    border: 0px solid var(--primary-color);
+    float: right;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    
+}
+
+main .img-schema{
+
+    border: 0px solid var(--primary-color);
+    float: left;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    
+}
+
+.section1 h2{
+    display: block; /* Ensures each <p> takes the full width */
+    width: 100%;    /* Makes sure it spans the entire container */
+    clear: both;
+
+}
+
+.text_roboto{
+    font-family: 'Roboto', Arial;
+    font-size: 18px;
+}
+
+.text_italic{
+    font-style: italic;
+
+}
+
+.text_light{
+    font-weight: 300;
+
+}
+
+.text_bold{
+    font-weight: 600;
+
+}
+
+.title_roboto{
+    font-family: 'Roboto', Arial;
+    font-weight: 600;
+
+    
+
+}
+
+
+
+figure{
+    margin:0;
+    padding: 0;
+}
+
+.album {
+    display: grid;
+    /*grid-template-columns: repeat(3, 1fr);  Default: 3 columns */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    max-width: 800px;
+    width: 100%;
+    padding: 10px;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    max-height: 375px;
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Optional: Shadow effect */
+}
+
+.album figcaption h3{
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.album figcaption p{
+    font-size: 12px;
+    line-height: 08px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.filter{
+    display: flex;
+    flex-wrap: nowrap;
+
+
+
+}
+
+.filter h4{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.filter button{
+    padding: 5px 15px;
+    cursor: pointer; 
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    background-color: var(--dark-bg);
+    color:var(--background-color);
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    
+    height: 100%;  
+}
+
+
+/* Grid-based container */
+.footer-container {
+    width: 800px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 20px;
+}
+
+/* Footer sections */
+.footer-section {
+    text-align: center;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}

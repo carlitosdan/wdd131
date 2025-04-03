@@ -1,0 +1,133 @@
+@media (min-width: 600px) {
+
+    .title h1{
+            font-size: 24px;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        
+    .header-container {
+        width: 800px;
+        display: flex;
+        justify-content: center; /* Move to center or left side etc */
+        align-items: center; /* Center vertically */
+    }
+    
+    #menu {
+            display: none; /* hide hamburger button */
+    }
+    
+    .navigation {
+            flex-direction: row;
+    }
+    
+    .navigation a {
+            display: block;
+    }
+    
+    
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        gap: 20px;
+    
+    }
+    
+    nav ul li {
+        display: flex;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+        padding: 8px 15px;
+        transition: 0.3s;
+    }
+    
+    nav ul li a:hover {
+        background-color: var(--menu-hover);
+        color: #fff;
+        border-radius: 3px;
+    } 
+    
+    }
+    
+    
+    
+    @media (max-width: 600px) {
+    
+    .header-container {
+            width:100%;
+            display: flex;
+            justify-content: space-between; 
+            align-items: flex-start; 
+    }
+        
+    #menu {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
+    #menu::before {
+        content: "☰";
+        font-size: 18px;
+    }
+    
+    #menu.open::before {
+        content: "❌";
+    }
+    
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        list-style: none;
+        padding-right: 20px;
+        padding-top: 35px;
+    }
+    
+    .title h1{  
+        font-size: 22px;
+        font-weight: bold;
+        color: var(--text-color);
+        padding-left: 20px;
+        padding-top: 0px;
+    
+    }
+    
+    .navigation a {
+        display: none;
+        padding-bottom: 0px;
+        padding-right: 25px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--text-color);
+        font-weight: 500;
+        padding: 8px 5px;
+        transition: 0.3s;
+    
+    
+    }
+    .navigation a:hover {
+        background-color: var(--menu-hover);
+        color:var(--header-bg);
+        font-weight: 600;
+        border-radius: 5px;
+    }
+    
+    /* when the button is clicked - the open class is toggled (added/removed) */
+    .open a {
+        display: block;
+        }
+    
+       
+    
+    }
+    
+    
+    
