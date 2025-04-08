@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review  - Daniel Florian</title>
+    <meta name="description" content="Review - Daniel Florian">
+    <meta name="author" content="Carlos Daniel Florian">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    
+</head>
+<body>
+
+<div ><p id="DisplayCount">You have submitted 0 reviews.</p></div>
+
+
+<script>
+    // Retrieve the number of form submissions from LocalStorage
+    let submitCount = localStorage.getItem("submitCount");
+
+    // If submitCount is not found, set it to 0
+    if (submitCount === null) {
+        submitCount = 0;
+    }
+
+    // Update the display
+    const submitCountElement = document.getElementById('DisplayCount');
+    submitCountElement.textContent = "You have submitted " + submitCount + " reviews.";
+</script>
+
+
+</body>
+</html>
